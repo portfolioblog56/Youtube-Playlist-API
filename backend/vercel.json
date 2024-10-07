@@ -8,13 +8,12 @@
   ],
   "builds": [
     {
-      "src": "index.js",
+      "src": "/index.js",
       "use": "@vercel/node"
     }
   ],
   "env": {
-    "API_KEY": "your_api_key_here",
-    "ANOTHER_ENV_VARIABLE": "another_value"
+    "YOUTUBE_API_KEY"="AIzaSyAJW-CVKNX6010PaSrbQYFWvHdiQ15u2ZQ"
   },
   "github": {
     "silent": true
