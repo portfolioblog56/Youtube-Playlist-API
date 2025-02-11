@@ -1,6 +1,7 @@
-const axios = require('axios');
+import axios from 'axios';
 
-async function getPlaylistVideos(apikey, maxresults, playlistid) {
+export async function getPlaylistVideos(apikey, maxresults, playlistid) {
+  console.log('from getPlaylistVideos',playlistid);
   if (!playlistid) {
     throw new Error('Playlist ID is required');
   }
@@ -44,5 +45,3 @@ async function getPlaylistVideos(apikey, maxresults, playlistid) {
     throw new Error('Failed to fetch playlist data from YouTube API');
   }
 }
-
-module.exports = { getPlaylistVideos };

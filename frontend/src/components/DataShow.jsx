@@ -16,7 +16,7 @@ export default function DataShow() {
       setError(null); 
       try {
         const response = await fetch(
-          `http://localhost:3000/youtube-playlist?playlistid=${idInput}&maxresults=${maxResults}`
+          `http://localhost:3000/api/v1/youtube-playlist?playlistid=${idInput}&maxresults=${maxResults}`
         );
 
         if (!response.ok) {
