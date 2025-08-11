@@ -23,7 +23,7 @@ export default function DataShow() {
       
       try {
         const response = await fetch(
-          `${import.meta.env.VITE_API_URL}/v1/youtube-playlist?playlistid=${encodeURIComponent(idInput)}&maxresults=${maxResults}`
+          `https://youtube-playlist-api.vercel.app/api/v1/youtube-playlist?playlistid=${encodeURIComponent(idInput)}&maxresults=${maxResults}`
         );
 
         if (!response.ok) {
