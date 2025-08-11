@@ -7,8 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sixtyfour: ['sixtyfour', 'sans-serif'], // Add your custom font here
-        sticknobills: ['sticknobills', 'sans-serif'], // Add your custom font here
+        sixtyfour: ['sixtyfour', 'sans-serif'],
+        sticknobills: ['sticknobills', 'sans-serif'],
       },
     },
   },
