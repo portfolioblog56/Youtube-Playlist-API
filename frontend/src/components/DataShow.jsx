@@ -23,7 +23,7 @@ export default function DataShow() {
       
       try {
         const response = await fetch(
-          `${process.env.VITE_API_URL}/v1/youtube-playlist?playlistid=${encodeURIComponent(idInput)}&maxresults=${maxResults}`
+          `${import.meta.env.VITE_API_URL}/v1/youtube-playlist?playlistid=${encodeURIComponent(idInput)}&maxresults=${maxResults}`
         );
 
         if (!response.ok) {
